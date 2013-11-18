@@ -1,0 +1,35 @@
+{
+	"name": "grunt-css-to-javascript",
+	"description": "Grunt task to convert css file to javascript file",
+	"version": "0.1.0",
+	"homepage": "",
+	"author": {
+		"name": "Rune Warhuus",
+		"email": "rune@dinkdonk.no",
+		"url": "http://www.dinkdonk.no"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/DinkDonk/grunt-css-to-javascript.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DinkDonk/grunt-css-to-javascript/issues"
+	},
+	"main": "grunt.js",
+	"engines": {
+		"node": "*"
+	},
+	"devDependencies": {
+		"grunt": "0.4.x"
+	},
+	"keywords": [
+		"gruntplugin",
+		"css",
+		"javascript",
+		"convert"
+	],
+	"readme": "This task converts css file into a javascript file containg the content of the css file in a truncated string variable named 'css'.",
+	"readmeFilename": "README.md",
+	"_id": "grunt-css-to-javascript@0.1.0",
+	"_from": "grunt-remove-logging@latest"
+}
