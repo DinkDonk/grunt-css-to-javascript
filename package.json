@@ -15,11 +15,14 @@
 	"bugs": {
 		"url": "https://github.com/DinkDonk/grunt-css-to-javascript/issues"
 	},
-	"main": "grunt.js",
+	"main": "Gruntfile.js",
 	"engines": {
-		"node": "*"
+		"node": ">= 0.8.0"
 	},
 	"devDependencies": {
+		"grunt": "0.4.x"
+	},
+	"peerDependencies": {
 		"grunt": "0.4.x"
 	},
 	"keywords": [
