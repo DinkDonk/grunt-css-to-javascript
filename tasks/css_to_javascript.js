@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         return grunt.file.read(filepath);
       }).join(grunt.util.normalizelf(options.separator));
 
-      src = 'var ' + options.variableName + ' = \'' + src.replace(/\s|\r\n|\n/g, '') + '\';';
+      src = 'var ' + options.variableName + ' = \'' + src.replace(/(\:\s)|\r\n|\n/g, '') + '\';';
 
       // Write the destination file.
       grunt.file.write(f.dest, src);
