@@ -1,38 +1,43 @@
 {
-	"name": "grunt-css-to-javascript",
-	"description": "Grunt task to convert css file to javascript file",
-	"version": "0.1.0",
-	"homepage": "",
-	"author": {
-		"name": "Rune Warhuus",
-		"email": "rune@dinkdonk.no",
-		"url": "http://www.dinkdonk.no"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/DinkDonk/grunt-css-to-javascript.git"
-	},
-	"bugs": {
-		"url": "https://github.com/DinkDonk/grunt-css-to-javascript/issues"
-	},
-	"main": "Gruntfile.js",
-	"engines": {
-		"node": ">= 0.8.0"
-	},
-	"devDependencies": {
-		"grunt": "0.4.x"
-	},
-	"peerDependencies": {
-		"grunt": "0.4.x"
-	},
-	"keywords": [
-		"gruntplugin",
-		"css",
-		"javascript",
-		"convert"
-	],
-	"readme": "This task converts css file into a javascript file containg the content of the css file in a truncated string variable named 'css'.",
-	"readmeFilename": "README.md",
-	"_id": "grunt-css-to-javascript@0.1.0",
-	"_from": "grunt-remove-logging@latest"
+  "name": "grunt-css-to-javascript",
+  "description": "Grunt task to convert css file to javascript file",
+  "version": "0.1.0",
+  "homepage": "https://github.com/DinkDonk/grunt-css-to-javascript",
+  "author": {
+    "name": "Rune Warhuus",
+    "email": "rune@dinkdonk.no",
+    "url": "http://www.dinkdonk.no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DinkDonk/grunt-css-to-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DinkDonk/grunt-css-to-javascript/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/DinkDonk/grunt-css-to-javascript/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
 }
