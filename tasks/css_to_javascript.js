@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     var options = this.options({
       punctuation: '.',
       separator: ', ',
-      variableName: ''
+      variableName: 'css'
     });
 
     // Iterate over all specified file groups.
@@ -34,13 +34,10 @@ module.exports = function(grunt) {
         }
       }).map(function(filepath) {
         // Read file source.
-        if (options.variableName === '') {
-          options.variableName = filepath;
-        }
         return grunt.file.read(filepath);
       }).join(grunt.util.normalizelf(options.separator));
 
-      src = 'var ' + options.variableName + ' = \'' + src + '\';';
+      src = 'var ' + options.variableName + ' = \'' + src.replace(' ', '') + '\';';
 
       // Write the destination file.
       grunt.file.write(f.dest, src);
